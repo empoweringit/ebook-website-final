@@ -1,0 +1,820 @@
+/* Created by John Underwood Paws on the Path */
+/* main CSS */
+
+/* Navbar */
+.navbar .btn-outline-light:hover,
+.navbar .btn-buy-now:hover {
+  color: var(--bs-dark);
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Navbar background color */
+.bg-purple {
+  background-color: #c167ef !important; /* A Bootstrap purple shade */
+}
+
+.navbar-sticky {
+  opacity: 0.95;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+  background: url(../images/header-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.modal-dialog {
+  max-width: 65rem; /* Adjusted to rem */
+}
+
+/* Background image */
+.download {
+  background: url("../images/download-background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* Background color */
+.background-blue-background {
+  background-color: rgba(173, 216, 230, 0.5); /* Light blue with 50% opacity */
+}
+
+/* Hero / Header section */
+.hero .image-container img {
+  border-radius: 0.5rem; /* Adjusted to rem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero .image-container img:hover {
+  transform: scale(1.05);
+}
+
+.hero-image-special {
+  width: 250%; /* Double the width */
+  max-width: none; /* Override any max-width settings */
+  height: 47em; /* Maintain aspect ratio */
+}
+
+/* Ensure there's no default padding or margin that could affect image placement */
+.image-container-special {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Updated styles for left and right images to ensure they sit close to each other */
+.hero-image-left,
+.hero-image-right {
+  width: 50%; /* Equal width for both images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the available space without stretching */
+}
+
+/* Enhancing both Contact and Buy Now buttons */
+.navbar .btn-outline-light,
+.navbar .btn-buy-now {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  border: 0.0625rem solid #fff; /* Solid white border */
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .btn-outline-light:hover,
+.navbar .btn-buy-now:hover {
+  background-color: #fff;
+  color: var(--bs-dark);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+/* Details section */
+.details .image-container img {
+  width: 100%; /* Makes the image a bit smaller than its container */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Larger shadow effect */
+  border: 0.2rem solid #fff; /* Keeps the white border */
+  border-radius: 0.5rem; /* Keeps the rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+.details .image-container img:hover {
+  transform: scale(1.03); /* Slight enlargement on hover */
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.download .image-container img {
+  margin-left: 15em; /* Push the image more to the right on desktop */
+  box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.25); /* Enhanced shadow for prominence */
+  border: 0.25rem solid #fff; /* Thicker border for emphasis */
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+.download .btn-primary {
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15); /* Shadow for the button */
+  font-size: 1rem; /* Adjust font size using rem */
+  padding: 0.75rem 1.5rem; /* Padding using rem */
+}
+
+/* Banners */
+.reader-banner {
+  background-color: #007bff; /* Adjust the color to match your theme */
+  padding: 5rem; /* This value should give enough space for the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid #fff; /* or use a color that contrasts well with the banner background */
+  outline-offset: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.custom-btn {
+  background-color: #fff; /* Light background for contrast */
+  color: #007bff; /* Blue text to stand out */
+  border-radius: 30px; /* Rounded corners */
+  padding: 0.5rem 1.5rem; /* Padding for size */
+  border: 2px solid #007bff; /* Matching solid border */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  background-color: #007bff; /* Background color change on hover/focus */
+  color: #fff; /* Text color change on hover/focus */
+  text-decoration: none; /* Remove underline on hover/focus */
+  transform: scale(1.05); /* Slight scale-up on hover/focus */
+}
+.banner-title {
+  margin: 0;
+  padding: 8em;
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.reader-banner:focus {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Family */
+/* Overall Section Styling */
+.family-behind {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.family-behind h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.family-behind p.lead {
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Article Card Styling */
+.family-behind article {
+  display: flex;
+  flex-direction: column;
+}
+
+.family-behind .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.family-behind .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.family-behind .card-img-top {
+  height: 650px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.family-behind .card-body {
+  background: white;
+  border-top: 5px solid #007bff; /* Adds a colored top border for visual interest */
+}
+
+.family-behind .card-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.family-behind .card-title i {
+  margin-right: 10px;
+}
+
+.family-behind .card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Button Styling */
+.family-behind .btn-primary {
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.family-behind .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004095;
+  transform: scale(1.05);
+}
+
+/* Accessibility Enhancements */
+.family-behind a:focus {
+  outline: 2px dashed #0056b3;
+  outline-offset: 2px;
+}
+
+/* Shadow boxes */
+.shadow-boxes .card {
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.shadow-boxes .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.shadow-boxes .card-img-top {
+  transition: opacity 0.3s ease;
+}
+
+.shadow-boxes .card:hover .card-img-top {
+  opacity: 0.8;
+}
+
+.shadow-boxes .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.shadow-boxes .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Donate section */
+.donate-section {
+  background-color: rgba(
+    173,
+    216,
+    230,
+    0.5
+  ); /* Light blue background with opacity */
+  transition: background-color 0.3s ease;
+}
+
+.list-unstyled li:before {
+  content: "\f00c"; /* FontAwesome check icon */
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: #28a745; /* Bootstrap success color */
+}
+
+.background-blue-background {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.background-blue-background:hover {
+  background-color: #add8e666;
+}
+
+/* Donate button hover effect */
+.donate-now-btn {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  color: #212529; /* Bootstrap's recommended text color for warning buttons */
+}
+
+.donate-now-btn:hover,
+.donate-now-btn:focus {
+  transform: scale(1.1); /* Scale effect on hover and focus */
+  color: #fff; /* Change text color to white for better contrast */
+  background-color: #ffca2c; /* Lighter yellow to highlight the hover effect */
+  border-color: #ffca2c; /* Matching border color to the background */
+}
+
+/* Ensures FontAwesome icon inside the button also changes color on hover and focus */
+.donate-now-btn:hover .fas,
+.donate-now-btn:focus .fas {
+  color: #fff; /* Change icon color to white */
+}
+
+/* Button background color on hover */
+.btn-warning:hover {
+  background-color: #ffc107; /* Bootstrap warning color for hover */
+  border-color: #ffc107;
+}
+
+/* contact form */
+.contact form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.contact textarea {
+  min-height: 150px; /* Increase the textarea height for better message writing */
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #004094;
+}
+
+/* Enhance the focus state for better accessibility */
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #9934e1;
+  box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer .container-fluid {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.bg-primary {
+  background-color: #6f42c1; /* Adjust this to match your preferred shade of purple */
+  width: 100%;
+  height: 3px;
+}
+
+.social-action {
+  background-color: #333; /* Or any dark background color of your choice */
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.social-action p {
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  color: #fff; /* Icons color */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Icons hover color */
+}
+
+.action-buttons .btn {
+  padding: 0.75rem 1.5rem; /* Button padding */
+  font-size: 1rem; /* Button font size */
+  margin: 0 0.5rem; /* Margin between buttons */
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons .btn-primary {
+  background-color: #007bff; /* Primary button background color */
+  border-color: #007bff; /* Primary button border color */
+}
+
+.action-buttons .btn-success {
+  background-color: #28a745; /* Success button background color */
+  border-color: #28a745; /* Success button border color */
+}
+
+.footer .row {
+  align-items: start; /* Aligns items at the top */
+}
+
+.footer-brand img {
+  display: block;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-brand img:hover {
+  transform: scale(1.05);
+}
+
+.footer-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.list-unstyled li {
+  margin-bottom: 1rem;
+}
+
+.list-unstyled i {
+  margin-right: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer p {
+  display: block;
+}
+
+/* Container adjustments for pricing section */
+.pricing .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Stretch items to fill the height */
+}
+
+.pricing .col-md-6 {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.pricing .col-md-6 img {
+  max-height: 25rem; /* Limiting the image height */
+  object-fit: contain; /* Ensures the image aspect ratio is maintained */
+  width: auto; /* Adjusts width automatically to maintain aspect ratio without exceeding max-height */
+  max-width: 100%; /* Ensures the image doesn't overflow its container */
+  margin-bottom: 1.25rem; /* Adds some space below the image */
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border: 0.3125rem solid #ffffff; /* Solid white border for contrast */
+  border-radius: 0.625rem; /* Rounds the corners of the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactions */
+}
+
+.pricing .col-md-6 img:hover {
+  transform: scale(1.05); /* Enlarges the image slightly on hover */
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.4); /* Enhances the shadow for a pronounced effect */
+}
+
+.pricing .col-md-6 img:focus {
+  outline: 0.1875rem solid #007bff; /* Blue outline for focus state for accessibility */
+  outline-offset: 0.3125rem; /* Space between outline and image border */
+}
+
+/* Pricing box adjustments */
+.price-box {
+  padding: 1.25rem; /* Adjusted to rem for consistency */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the pricing box content */
+  max-width: 100%; /* Ensures the box doesn't exceed its column */
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15); /* Consistent shadow depth with the image */
+  border-radius: 0.625rem; /* Consistent border radius with the image */
+}
+.pricing {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.pricing img {
+  max-width: 100%;
+  height: auto; /* Changed to 'auto' to maintain aspect ratio */
+  border-radius: 5px;
+}
+
+.price-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.price-title {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.pricing-details {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #666;
+  margin-right: 10px;
+}
+
+.sale-price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.btn-primary {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.offer-ends {
+  margin-top: 20px;
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  /* Navbar background color */
+  .navbar {
+    background-color: #343a40; /* Optimal for contrast and visibility */
+  }
+
+  /* Navigation links and buttons for better touch interaction */
+  .navbar-nav .nav-link,
+  .navbar-nav .btn {
+    font-size: 0.8rem; /* Small but readable on small screens */
+    padding: 0.5rem 0.5rem; /* Sufficient for touch without being too bulky */
+    margin: 0.5rem 0; /* Avoids cramping, provides visual separation */
+  }
+
+  /* Navbar toggler button adjustment for easier interaction */
+  .navbar-toggler {
+    padding: 0.5rem 0.5rem; /* Balanced for finger tapping */
+  }
+
+  /* Adjusting misplaced download section images for mobile */
+  .download .image-container img {
+    margin-left: 0; /* Resetting to align properly on mobile */
+    float: none; /* Removing float for consistent mobile styling */
+    display: block; /* Ensuring it's visible but adjusted for mobile view */
+  }
+
+  /* Ensuring hero section images are displayed correctly */
+  .hero .image-container img {
+    display: block; /* Ensure main hero images are displayed on mobile */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Hiding details section images specifically */
+  .details .image-container img {
+    display: none; /* Hide images in the details section for focus on content */
+  }
+
+  /* Reader banner adjustments for enhanced mobile readability */
+  .reader-banner {
+    padding: 2rem 1rem; /* Increased padding for better spacing around text */
+  }
+
+  .reader-banner .banner-title,
+  .reader-banner h2,
+  .reader-banner h3 {
+    font-size: 1.25rem; /* Larger for readability but not overwhelming */
+    padding: 0 1rem; /* Prevents text from touching the screen edges */
+    margin-bottom: 1rem; /* Adds visual separation between text and other elements */
+  }
+
+  /* Custom button adjustments for visibility and interaction */
+  .custom-btn {
+    padding: 0.75em; /* Slightly larger for easier interaction */
+    margin-top: 0.5em; /* Provides space above for clarity */
+    font-size: 0.9rem; /* Balances visibility and space */
+  }
+
+  /* Adjust navbar collapse behavior for a vertical layout */
+  .navbar .navbar-collapse {
+    flex-direction: column; /* Ensures menu items are stacked vertically */
+  }
+
+  /* Text container adjustments for better content focus */
+  .hero .text-container,
+  .details .text-container,
+  .download .text-container {
+    padding: 0 15px; /* Side padding for readability without reducing too much content width */
+    margin-top: 1em; /* Adds space above for better content separation */
+    text-align: center; /* Centers text for focus and balance */
+  }
+
+  /* Navbar buttons adjustment for consistency and accessibility */
+  .navbar-nav .btn {
+    padding: 0.75rem 1rem; /* Optimized for finger tapping */
+    width: auto; /* Auto width for content flexibility */
+    margin: 0.5rem auto; /* Center aligns button and adds vertical spacing */
+    display: block; /* Ensures proper spacing as a block-level element */
+  }
+
+  /* Special image containers that should be hidden on mobile */
+  .hero .image-container-special,
+  .download .image-container {
+    display: none; /* Ensures special cases are also handled appropriately */
+  }
+}
+
+/* Media query for phones */
+@media (min-width: 576px) and (max-width: 767px) {
+  @media (min-width: 576px) and (max-width: 767px) {
+    /* Ensures navbar has a distinct background for visibility */
+    .navbar {
+      background-color: #343a40; /* Maintained as per the design choice */
+    }
+
+    /* Uniformity in navigation links and buttons for cohesiveness */
+    .navbar-nav .nav-link,
+    .navbar-nav .btn-outline-light,
+    .navbar-nav .btn-buy-now {
+      font-size: 0.8rem; /* Keeps text legible yet compact */
+      padding: 0.8rem 2rem; /* Provides enough area for comfortable tapping */
+    }
+
+    /* Navbar toggler adjustments for aesthetics and functionality */
+    .navbar-toggler {
+      padding: 1em; /* Optimal for touch without being too bulky */
+      font-size: 0.75rem; /* Reduces icon size for a balanced look */
+    }
+
+    /* Spacing around the navbar to prevent feeling cramped */
+    .navbar-nav {
+      margin-top: 1rem; /* Provides visual separation from other elements */
+    }
+
+    /* Button spacing within the navbar for better touch interaction */
+    .navbar .navbar-nav .nav-item .btn {
+      margin-top: 1em; /* Adds vertical spacing for clarity */
+      margin-bottom: 1em; /* Ensures buttons are not too close to each other */
+    }
+
+    /* Centering image containers while adjusting their widths */
+    .hero .image-container,
+    .download .image-container {
+      justify-content: center; /* Aligns content in the center for focus */
+      width: 80%; /* Limits width to prevent overspreading */
+    }
+
+    /* Adjusts hero section for proper image display */
+    .hero .image-container img {
+      display: block; /* Ensures hero images are visible for branding */
+      width: 100%; /* Full width of the container for impact */
+      height: auto; /* Maintains aspect ratio */
+    }
+
+    /* Corrects hiding of images where not needed for focus on content */
+    .download .image-container img {
+      display: none; /* Hides non-essential images to reduce distraction */
+    }
+
+    /* Ensures special containers adjust properly in the absence of images */
+    .hero .image-container-special {
+      max-width: 100%; /* Allows container to use available width */
+      justify-content: center; /* Keeps any contained elements centered */
+    }
+
+    /* Adjustments to the hero-special class for proper spacing */
+    .hero-special {
+      padding-top: 5em; /* Adds significant top padding for visual separation */
+      margin-left: 0; /* Resets left margin to align content properly */
+    }
+
+    /* Reader banner title adjustments for clear readability */
+    .reader-banner h3.banner-title {
+      font-size: 1rem; /* Ensures titles are easily readable on small devices */
+    }
+
+    /* Social icons spacing for better accessibility */
+    .social-icons {
+      margin-bottom: 1rem; /* Adds space below icons for separation */
+    }
+
+    /* Action button margins for ease of interaction */
+    .action-buttons .btn {
+      margin: 0.5rem; /* Provides ample space around buttons for tapping */
+    }
+
+    /* Centers footer content for consistency and aesthetics */
+    .footer .col-12 {
+      text-align: center; /* Aligns footer content for better presentation */
+    }
+
+    /* Adjustments for footer columns for alignment and structure */
+    .footer .col-md-3.mb-4.px-6 {
+      display: flex;
+      justify-content: center; /* Centers content horizontally */
+      flex-direction: column; /* Stacks elements vertically for clarity */
+    }
+  }
+
+  /* Media query for small tablet to large phone */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+      background-color: #343a40 !important; /* Bootstrap Dark Grey, adjust the color code as desired */
+    }
+
+    .navbar .navbar-nav .nav-item .btn {
+      margin-top: 1em !important; /* Adjust this value as needed for vertical spacing */
+      margin-bottom: 1em !important; /* Adjust this value as needed for vertical spacing */
+    }
+
+    .navbar .navbar-nav .nav-item:last-child .btn {
+      margin-bottom: 0 !important; /* Avoids extra space below the last button */
+    }
+
+    .hero .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Ensure vertical centering */
+      padding: 0; /* Remove padding if any */
+    }
+
+    .hero .image-container img {
+      object-fit: scale-down; /* Adjusts image size gracefully */
+      width: auto; /* Allow natural width */
+      max-height: 400px; /* Example fixed height, adjust as needed */
+    }
+
+    .download {
+      display: flex;
+      justify-content: center; /* Center the content container itself */
+      text-align: center; /* Center text for consistency */
+    }
+
+    .download .container {
+      flex-grow: 1; /* Allow the container to fill available space for centering */
+      max-width: 100%; /* Prevent Bootstrap's max-width from restricting the container */
+    }
+
+    .download .row {
+      flex-grow: 1; /* Ensure the row takes up available space for proper centering */
+      justify-content: center; /* Center the columns within the row */
+    }
+
+    .download .image-container {
+      flex: 0 1 auto; /* Allow the container to grow but also respect its content size */
+      justify-content: center; /* Ensure horizontal centering within the flex container */
+      align-items: center; /* Ensure vertical centering */
+    }
+
+    .download .image-container img {
+      max-width: 100%; /* Prevent the image from exceeding its container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: contain;
+      /* Ensure the image fits within its bounds without cropping */
+    }
+
+    @media (min-width: 991px) and (max-width: 1200px) {
+      .header .image-container {
+        /* Adjust the container's alignment and/or padding as needed */
+        padding-right: 10%; /* Example: Reduces the width on the right, adjust percentage as needed */
+        margin-left: 20em;
+      }
+
+      .header .image-container img {
+        /* Adjust image size for better fit */
+        max-width: 75%; /* Reduce max-width to prevent it from being cut off, adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+    }
+  }
+}

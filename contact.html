@@ -1,0 +1,427 @@
+<!-- Bramble Jams Book Paws on the Path HTML Contact [Bootstrap-5]
+  Author: John Underwood 2024-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>
+      Paws on the Path: Brambles Adventures into the Terrain and Mind Contact
+      form
+    </title>
+  </head>
+
+  <!-- body -->
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-nav-color">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="images/bramble-logo-var4.png"
+            alt="Paws on the Path Logo"
+            width="200"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-semibold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="details.html" class="nav-link fw-semibold">Details</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link btn btn-outline-light fw-semibold px-4 mx-2"
+                >Contact</a
+              >
+            </li>
+            <!-- Added Buy Now button -->
+            <li class="nav-item">
+              <a
+                href="checkout.html"
+                class="nav-link btn btn-buy-now fw-semibold px-4"
+                >Buy Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <!-- Hero -->
+      <div class="hero text-white pt-7 pb-4 mb-5">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-12">
+              <h1>Contact Information</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="frame-decoration"
+        data-name="Layer 2"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        viewBox="0 0 1920 192.275"
+      >
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #f3f6f9;
+            }
+          </style>
+        </defs>
+        <title>frame-decoration</title>
+        <path
+          class="cls-1"
+          d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
+          transform="translate(0 -158.755)"
+        />
+      </svg>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact bg-light pb-4" aria-labelledby="contactFormTitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="contactFormTitle" class="visually-hidden">Contact Us</h2>
+            <h2 style="padding-left: 1%">Submit an Inquiry</h2>
+            <form
+              action="https://formspree.io/f/mrgvnzvq"
+              method="POST"
+              novalidate
+            >
+              <div class="mb-3">
+                <label for="userName" class="form-label visually-hidden"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="userName"
+                  name="name"
+                  placeholder="Name"
+                  aria-required="true"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userEmail" class="form-label visually-hidden"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="userEmail"
+                  name="email"
+                  placeholder="Email"
+                  aria-required="true"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="userMessage" class="form-label visually-hidden"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control form-control-lg"
+                  id="userMessage"
+                  name="message"
+                  rows="6"
+                  placeholder="Type Your Inquiry Here:"
+                  aria-required="true"
+                  required
+                ></textarea>
+              </div>
+              <div class="d-grid">
+                <button
+                  type="submit"
+                  class="btn btn-primary text-white mt-3 mb-4"
+                  aria-label="Submit your inquiry"
+                >
+                  Submit
+                </button>
+              </div>
+              <div
+                class="g-recaptcha mb-3"
+                data-sitekey="YOUR_SITE_KEY_HERE"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Support Commitment Section -->
+    <section
+      class="customer-support mt-2 mb-2"
+      style="
+        background-image: url('images/backgroundunique.jpg');
+        color: #fff;
+        padding: 100px 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      "
+    >
+      <div class="container" style="position: relative; z-index: 2">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2
+              style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px"
+            >
+              We're Here to Help
+            </h2>
+            <p style="font-size: 1.2rem; line-height: 1.6">
+              At Bramble, we value your inquiries and are committed to
+              responding within 24 hours. Our focus on customer support means
+              we're always ready to have discussions on the book, offer
+              clarifications on misunderstandings with the science, and more,
+              all in the most professional manner. Your satisfaction and
+              understanding are our top priorities.
+            </p>
+          </div>
+        </div>
+        <!-- Start of the Three-Box Icon List -->
+        <div class="row mt-5">
+          <div class="col-md-4 mb-3">
+            <div class="icon-box">
+              <i class="fas fa-headset" aria-hidden="true"></i>
+              <h3>Customer Support</h3>
+              <p>
+                Have questions about your order or need help with the purchasing
+                process? Our team is here to assist you every step of the way.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="icon-box">
+              <i class="fas fa-book-open" aria-hidden="true"></i>
+              <h3>Book Insights</h3>
+              <p>
+                Curious about the scientific concepts or the adventures Bramble
+                embarks on? Let's dive deeper into the wonders of canine
+                cognition together.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="icon-box">
+              <i class="fas fa-paw" aria-hidden="true"></i>
+              <h3>Dog Lovers' Queries</h3>
+              <p>
+                Wondering how to apply the insights from Bramble's journey to
+                understand your furry friend better? We're here to discuss and
+                explore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End of the Three-Box Icon List -->
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 123, 255, 0.5);
+        "
+      ></div>
+    </section>
+
+    <!-- Social and Action Section -->
+    <section class="social-action text-bg-dark py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center fs-4">
+            <p>
+              Join our pack and stay updated with Bramble Jam's latest
+              adventures and insights into the canine world.
+            </p>
+            <div class="social-icons d-flex justify-content-center gap-4 mb-4">
+              <a href="https://facebook.com" class="fab fa-facebook fa-2x"></a>
+              <a
+                href="https://instagram.com"
+                class="fab fa-instagram fa-2x"
+              ></a>
+              <a href="https://tiktok.com" class="fab fa-tiktok fa-2x"></a>
+              <a href="https://amazon.com" class="fab fa-amazon fa-2x"></a>
+              <a
+                href="https://pinterest.com"
+                class="fab fa-pinterest fa-2x"
+              ></a>
+              <a href="https://ebay.com" class="fab fa-ebay fa-2x"></a>
+            </div>
+            <div class="action-buttons">
+              <a href="purchase-link.com" class="btn btn-primary me-2"
+                >Buy Now</a
+              >
+              <a href="donate-link.com" class="btn btn-success">Donate Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with Accessibility and Enhanced Features -->
+    <footer class="footer bg-dark text-white">
+      <div class="container-fluid">
+        <div class="bg-primary" style="height: 3px; width: 100%"></div>
+        <div class="row pt-4 pb-2 gx-5">
+          <div class="col-12 col-md-3 mb-4 text-center">
+            <a href="index.html" class="footer-brand">
+              <img
+                src="images/bramble-logo-var4.png"
+                alt="Paws on the Path Logo"
+                style="width: 150px"
+              />
+            </a>
+            <p class="mt-2">
+              Join Bramble Jam on an adventure beyond the leash. Discover,
+              learn, and explore the wonders of the canine world with us.
+            </p>
+          </div>
+
+          <!-- Footer Navigation with Accessibility Enhancements -->
+          <div class="col-md-3 mb-4 pl-4 px-5">
+            <h4 class="text-primary">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-home"></i>
+                <a href="index.html" class="footer-link" aria-label="Home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-info-circle"></i>
+                <a href="#details" class="footer-link" aria-label="Details"
+                  >Details</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="contact.html" class="footer-link" aria-label="Contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-shopping-cart"></i>
+                <a href="checkout.html" class="footer-link" aria-label="Buy Now"
+                  >Buy Now</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 mb-4">
+            <h4 class="text-primary">Contact Us</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="contact.html" class="footer-link"
+                  >Click Here to Email Us</a
+                >
+              </li>
+              <li>Phone: +1 734 516 8332</li>
+            </ul>
+          </div>
+
+          <!-- Social Media Icons with Accessibility -->
+          <div class="col-md-3">
+            <h4 class="text-primary">Follow Us</h4>
+            <div>
+              <a
+                href="https://instagram.com"
+                class="text-white me-2"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                class="text-white me-2"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://tiktok.com"
+                class="text-white me-2"
+                aria-label="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a
+                href="https://www.amazon.com"
+                class="text-white me-2"
+                aria-label="Amazon"
+                ><i class="fab fa-amazon"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com"
+                class="text-white me-2"
+                aria-label="Pinterest"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+              <a
+                href="https://www.ebay.com"
+                class="text-white"
+                aria-label="eBay"
+                ><i class="fab fa-ebay"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Links and Copyright -->
+        <div class="row pt-3">
+          <div class="col-md-6 text-md-start text-center">
+            <a
+              href="privacy-policy.html"
+              class="footer-link"
+              aria-label="Privacy Policy"
+              >Privacy Policy</a
+            >
+            |
+            <a
+              href="terms.html"
+              class="footer-link"
+              aria-label="Terms and Conditions"
+              >Terms & Conditions</a
+            >
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <p>Copyright &copy; Paws on the Path 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,680 @@
+<!-- Bramble Jams Book Paws on the Path HTML [Bootstrap-5]
+  Author: John Underwood 2024-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="icon" href="images/Bramble Jams Logo 2.jpg" />
+    <title>
+      Home | Paws on the Path: A Canines Journey Through the Terrain & Mind
+    </title>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Navigation - scroll -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-nav-color">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="images/bramble-logo-var4.png"
+            alt="Paws on the Path Logo"
+            width="200"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-semibold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="details.html" class="nav-link fw-semibold">Details</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link btn btn-outline-light fw-semibold px-4 mx-2"
+                >Contact</a
+              >
+            </li>
+            <!-- Added Buy Now button -->
+            <li class="nav-item">
+              <a
+                href="checkout.html"
+                class="nav-link btn btn-buy-now fw-semibold px-4"
+                >Buy Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header hero text-white pt-5 pb-4 position-relative">
+      <div class="container-xl">
+        <div class="row">
+          <!-- Text Content on Left -->
+          <div class="col-12 col-md-6 order-2 order-md-1">
+            <div
+              class="text-container p-4 d-flex flex-column justify-content-center mt-7 mb-8"
+            >
+              <h1 class="display-4 fw-bold">Paws on the Path:</h1>
+              <h2 class="h5 fw-normal">
+                A Canines Journey Through the Terrain & Mind
+              </h2>
+              <p>
+                Join Bramble Jam, a spirited and curious Pitbull Terrier, on her
+                remarkable journey home. Dive into her world to explore the
+                wonders of canine senses, emotions, and intelligence.
+              </p>
+              <!-- Form for Free Download -->
+              <div class="form-container mt-3 mr-5">
+                <form>
+                  <div class="mt-4 mb-5">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="emailInput"
+                      placeholder="Enter Your Email to Sign-Up"
+                      aria-label="Recipient's email"
+                      required
+                    />
+                  </div>
+                  <div class="d-grid gap-2">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg"
+                      style="
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+                        max-width: 85%;
+                      "
+                    >
+                      Sign-Up
+                    </button>
+                    <a
+                      href="checkout.html"
+                      class="btn btn-success btn-lg mb-7 mt-2"
+                      style="
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+                        max-width: 85%;
+                      "
+                      role="button"
+                      >Buy Now!</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Image on Right -->
+          <div
+            class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center justify-content-md-end"
+          >
+            <!-- 'justify-content-md-end' aligns the image to the right on medium screens and up -->
+            <div
+              class="image-container mt-6 mb-2 px-3"
+              style="max-width: 100%; width: auto"
+            >
+              <!-- Adding link to checkout.html -->
+              <a href="checkout.html">
+                <img
+                  src="images/Blue illustrated journey book cover.png"
+                  alt="Bramble Jam's Adventure"
+                  class="img-fluid"
+                  style="
+                    object-fit: cover;
+                    max-width: 100%;
+                    height: 80%;
+                    border: 0.2rem solid #fff;
+                    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4),
+                      0 0.375rem 0.75rem rgba(0, 0, 0, 0.2);
+                  "
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wavy SVG decoration -->
+      <svg
+        class="frame-decoration position-absolute"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        viewBox="0 0 1920 150"
+        style="
+          display: block;
+          width: 100%;
+          height: auto;
+          bottom: 0;
+          left: 0;
+          margin-bottom: -1px;
+        "
+      >
+        <path
+          class="cls-1"
+          fill="#f3f6f9"
+          d="M0,0s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V150H0Z"
+        />
+      </svg>
+    </header>
+
+    <!-- Icons Section -->
+    <section class="icons bg-light pb-5">
+      <div class="container-xl">
+        <div class="row hstack g-4">
+          <div class="col-md-4 d-flex gap-4 align-items-start">
+            <i class="fas fa-paw fa-3x text-primary"></i>
+            <div>
+              <h5 class="fw-bold">Sensory Journey</h5>
+              <p class="text-muted">
+                Explore the world through Bramble Jam's senses. Learn how a
+                dog's remarkable sense of smell shapes their perception.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex gap-4 align-items-start">
+            <i class="fas fa-heart fa-3x text-secondary"></i>
+            <div>
+              <h5 class="fw-bold">Emotional Odyssey</h5>
+              <p class="text-muted">
+                Dive into the emotional world of dogs. Understand how Bramble
+                Jam experiences joy, loyalty, and the challenge of separation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex gap-4 align-items-start">
+            <i class="fas fa-brain fa-3x text-primary"></i>
+            <div>
+              <h5 class="fw-bold">Cognitive Explorations</h5>
+              <p class="text-muted">
+                Unveil the intelligence and learning processes of dogs through
+                Bramble Jam's adventures and encounters.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section class="offerings bg-light py-5">
+      <div class="container-xl">
+        <div class="row hstack g-4 justify-content-center">
+          <!-- eBook Offering -->
+          <div class="col-md-4 d-flex gap-4 align-items-start">
+            <i class="fas fa-tablet-alt fa-3x text-success"></i>
+            <div>
+              <h5 class="fw-bold">eBook</h5>
+              <p class="text-muted">
+                Enjoy the digital journey with Bramble Jam on any device. An
+                interactive eBook experience tailored for convenience and
+                immersion.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paperback Offering -->
+          <div class="col-md-4 d-flex gap-4 align-items-start">
+            <i class="fas fa-book-open fa-3x text-warning"></i>
+            <div>
+              <h5 class="fw-bold">Paperback</h5>
+              <p class="text-muted">
+                Dive into the tactile world with the Paperback edition.
+                Lightweight and portable, ready for your next adventure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hardcover Offering -->
+          <div class="col-md-4 d-flex gap-4 align-items-start">
+            <i class="fas fa-book fa-3x text-info"></i>
+            <div>
+              <h5 class="fw-bold">Hardcover</h5>
+              <p class="text-muted">
+                A premium Hardcover edition for collectors and enthusiasts.
+                Durable and elegant, it's a treasure on any bookshelf.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <section class="reader-banner py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto text-center">
+            <h2 class="banner-title d-inline-block mb-0 align-middle">
+              A Journey Beyond the Leash
+            </h2>
+            <!-- Adjusted 'Learn More' button for side-by-side alignment -->
+            <a
+              href="details.html#journey-info"
+              class="btn custom-btn btn-lg ms-3 align-middle"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="details my-5 bg-white">
+      <div class="container">
+        <div class="row">
+          <!-- Image Container on the Left -->
+          <div class="col-lg-6">
+            <div class="image-container p-5">
+              <img
+                src="images/White Modern Forest Journey Book Cover.png"
+                alt="Bramble Journey"
+                class="img-fluid"
+                style="
+                  height: auto;
+                  max-width: 100%;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                    0 2px 4px rgba(0, 0, 0, 0.1);
+                  border-radius: 8px;
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Text Content and Pricing Plan on the Right -->
+
+          <div class="col-lg-6">
+            <div
+              class="text-container d-flex flex-column justify-content-center h-100"
+            >
+              <h3 class="display-6">
+                Learn About Bramble & the Mind of Canines
+              </h3>
+              <p>
+                "Paws on the Path" invites readers on an enthralling journey
+                with Bramble Jam, as she navigates through unfamiliar terrains,
+                making new friends, and discovering the vast world beyond her
+                home.
+              </p>
+              <ul class="list-group list-group-flush lh-lg">
+                <li class="list-group-item">
+                  <i class="fas fa-paw text-primary"></i> Explore canine senses
+                  and the significance of scent.
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-heart text-primary"></i> Understand emotional
+                  intelligence and the bonds dogs form.
+                </li>
+                <li class="list-group-item">
+                  <i class="fas fa-brain text-primary"></i> Dive into cognitive
+                  abilities and problem-solving skills.
+                </li>
+              </ul>
+              <!-- Pricing Plan -->
+              <div class="price-box mt-4">
+                <h3 class="price-title">Limited Time Offer</h3>
+                <p class="lead">
+                  Grab your copy of <strong>"Paws on the Path"</strong> and join
+                  Bramble Jam on her adventures.
+                </p>
+                <div class="pricing-details">
+                  <span class="original-price">$14.99</span>
+                  <span class="sale-price">$5.99</span>
+                </div>
+                <a href="purchase-link.com" class="btn btn-lg btn-success"
+                  >Buy Now</a
+                >
+                <p class="offer-ends">Hurry, offer ends soon!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="reader-banner py-5 bg-primary text-white text-center shadow-effect"
+    >
+      <h3 class="banner-title">What Our Readers Say</h3>
+    </section>
+
+    <section class="background-blue-background mb-2 mt-2 pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img
+              src="images/testimonial-4.jpg"
+              alt="John Underwood"
+              class="rounded-circle mb-3"
+            />
+            <p class="lead fst-italic">
+              "Bramble's story captivated me from start to finish. The insights
+              into her mind and emotions were eye-opening and deeply moving."
+            </p>
+            <p class="fw-bold">John Underwood</p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img
+              src="images/testimonial-6.jpg"
+              alt="Uche Okoli"
+              class="rounded-circle mb-3"
+            />
+            <p class="lead fst-italic">
+              "An enchanting tale that not only entertains but educates. It's a
+              must-read for any dog lover curious about the inner workings of
+              their furry friends."
+            </p>
+            <p class="fw-bold">Uche Okoli</p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img
+              src="images/testimonial-2.jpg"
+              alt="Greysen Gebski"
+              class="rounded-circle mb-3"
+            />
+            <p class="lead fst-italic">
+              "A journey of heart and mind. Bramble Jam's adventures offer a
+              unique perspective on canine cognition and emotion that's both
+              informative and touching."
+            </p>
+            <p class="fw-bold">Greysen Gebski</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download bg-light py-5 mb-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1">
+            <div
+              class="text-container text-white h-100 d-flex flex-column justify-content-center"
+            >
+              <h2 class="fw-bold">Embark on the Adventure</h2>
+              <p>
+                Dive deep into Bramble Jam's world and experience her adventures
+                first-hand. Grab your copy of "Paws on the Path" now and unlock
+                the secrets of canine minds.
+              </p>
+              <form>
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                    aria-label="Recipient's email"
+                  />
+                  <button
+                    class="btn btn-primary text-white rounded-end"
+                    type="submit"
+                  >
+                    Join the Journey
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+            <div class="image-container d-flex justify-content-center">
+              <!-- Image trigger modal -->
+              <img
+                src="images/bramble-new-zoom.jpg"
+                alt="Download 'Paws on the Path'"
+                class="img-fluid"
+                style="max-height: 400px; cursor: pointer; margin-right: 20em"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="images/bramble-new-zoom.jpg"
+              alt="Full Size Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social and Action Section -->
+    <section class="social-action text-bg-dark py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center fs-4">
+            <p>
+              Join our pack and stay updated with Bramble Jam's latest
+              adventures and insights into the canine world.
+            </p>
+            <div class="social-icons d-flex justify-content-center gap-4 mb-4">
+              <a href="https://facebook.com" class="fab fa-facebook fa-2x"></a>
+              <a
+                href="https://instagram.com"
+                class="fab fa-instagram fa-2x"
+              ></a>
+              <a href="https://tiktok.com" class="fab fa-tiktok fa-2x"></a>
+              <a href="https://amazon.com" class="fab fa-amazon fa-2x"></a>
+              <a
+                href="https://pinterest.com"
+                class="fab fa-pinterest fa-2x"
+              ></a>
+              <a href="https://ebay.com" class="fab fa-ebay fa-2x"></a>
+            </div>
+            <div class="action-buttons">
+              <a href="checkout.html" class="btn btn-primary me-2">Buy Now</a>
+              <a href="donate-link.com" class="btn btn-success">Donate Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with Accessibility and Enhanced Features -->
+    <footer class="footer bg-dark text-white">
+      <div class="container-fluid">
+        <div class="bg-primary" style="height: 3px; width: 100%"></div>
+        <div class="row pt-4 pb-2 gx-5">
+          <div class="col-12 col-md-3 mb-4 text-center">
+            <a href="index.html" class="footer-brand">
+              <img
+                src="images/bramble-logo-var4.png"
+                alt="Paws on the Path Logo"
+                style="width: 150px"
+              />
+            </a>
+            <p class="mt-2">
+              Join Bramble Jam on an adventure beyond the leash. Discover,
+              learn, and explore the wonders of the canine world with us.
+            </p>
+          </div>
+
+          <!-- Footer Navigation with Accessibility Enhancements -->
+          <div class="col-md-3 mb-4 pl-4 px-5">
+            <h4 class="text-primary">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-home"></i>
+                <a href="index.html" class="footer-link" aria-label="Home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-info-circle"></i>
+                <a href="#details" class="footer-link" aria-label="Details"
+                  >Details</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="contact.html" class="footer-link" aria-label="Contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-shopping-cart"></i>
+                <a href="checkout.html" class="footer-link" aria-label="Buy Now"
+                  >Buy Now</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 mb-4">
+            <h4 class="text-primary">Contact Us</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="contact.html" class="footer-link"
+                  >Click Here to Email Us</a
+                >
+              </li>
+              <li>Phone: +1 734 516 8332</li>
+            </ul>
+          </div>
+
+          <!-- Social Media Icons with Accessibility -->
+          <div class="col-md-3">
+            <h4 class="text-primary">Follow Us</h4>
+            <div>
+              <a
+                href="https://instagram.com"
+                class="text-white me-2"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                class="text-white me-2"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://tiktok.com"
+                class="text-white me-2"
+                aria-label="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a
+                href="https://www.amazon.com"
+                class="text-white me-2"
+                aria-label="Amazon"
+                ><i class="fab fa-amazon"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com"
+                class="text-white me-2"
+                aria-label="Pinterest"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+              <a
+                href="https://www.ebay.com"
+                class="text-white"
+                aria-label="eBay"
+                ><i class="fab fa-ebay"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Links and Copyright -->
+        <div class="row pt-3">
+          <div class="col-md-6 text-md-start text-center">
+            <a
+              href="privacy-policy.html"
+              class="footer-link"
+              aria-label="Privacy Policy"
+              >Privacy Policy</a
+            >
+            |
+            <a
+              href="terms.html"
+              class="footer-link"
+              aria-label="Terms and Conditions"
+              >Terms & Conditions</a
+            >
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <p>Copyright &copy; Paws on the Path 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("signupForm");
+        form.addEventListener(
+          "submit",
+          function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var emailInput = document.getElementById("emailInput");
+            if (emailInput.value === "" || !emailInput.value.includes("@")) {
+              emailInput.classList.add("is-invalid");
+            } else {
+              emailInput.classList.remove("is-invalid");
+              // Here you can add what you want to do when the email is valid.
+              alert("Thank you for signing up!");
+              // You might want to submit the form here or redirect the user.
+            }
+          },
+          false
+        );
+      });
+    </script>
+  </body>
+</html>
